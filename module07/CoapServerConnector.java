@@ -6,22 +6,18 @@ import org.eclipse.californium.core.CoapResource;
 import org.eclipse.californium.core.CoapServer;
 
 public class CoapServerConnector {
-	// static
+	// constructors
+
+	public CoapServerConnector() {
+		super();
+	}
+	
 	private static final Logger _Logger = 
 			Logger.getLogger(CoapServerConnector.class.getName());
 	// private var's
 	private CoapServer _coapServer;
 
-	// constructors
-	/**
-	 * Default.
-	 *
-	 */
-	public CoapServerConnector() {
-		super();
-	}
-
-	// public methods
+// Add resources if we could find
 	public void addResource(CoapResource resource) {
 		if (resource != null) {
 			_coapServer.add(resource);

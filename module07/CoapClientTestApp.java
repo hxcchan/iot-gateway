@@ -4,7 +4,6 @@ import java.util.logging.Logger;
 
 public class CoapClientTestApp {
 	
-	// static
 	private static final Logger _Logger = 
 			Logger.getLogger(CoapClientTestApp.class.getName());
 	

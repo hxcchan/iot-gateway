@@ -4,7 +4,11 @@ import java.util.logging.Logger;
 
 public class CoapServerTestApp {
 	
-	// static
+	// constructors
+	public CoapServerTestApp() {
+		super();
+	}
+	
 	private static final Logger _Logger = 
 			Logger.getLogger(CoapServerTestApp.class.getName());
 	
@@ -15,24 +19,13 @@ public class CoapServerTestApp {
 	 */
 	public static void main(String[] args) {
 		_App = new CoapServerTestApp();
-		try {
 			_Logger.info("Coap Server starts.");
 			_App.start();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 
 	// private var's
 	private CoapServerConnector _coapServer;
 
-	// constructors
-	/**
-	*
-	*/
-	public CoapServerTestApp() {
-		super();
-	}
 
 	// public methods
 	/**
